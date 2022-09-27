@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var array=[2,3,4,5,6]
+            function square(array){
+                emptyarray=[]
+
+                for(ele of array){
+                let res=ele*ele
+                emptyarray.push(res)
+                }
+              document.write(emptyarray)
+            }
+            function cube(array){
+                cubearray=[]
+
+                for(ele of array){
+                let res= ele*ele*ele
+                cubearray.push(res)
+                }
+              document.write("<br>"+cubearray)
+            }
+            square(array)
+            cube(array)
+        </script>
+    </body>
+</html>

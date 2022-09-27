@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h5>Apply() in javascript?</h5>
+        <P>it is predefined javascript function it can be used to call a method with an owner object
+            and it takes arguments as arrays.
+        </P>
+      <script> 
+    
+        employs={
+            getmethod: function(city,country){
+                return this.fname+this.lname+","+city+","+country
+            }
+         }
+         employe1={
+            fname:"gajendra",
+            lname:"tana",
+            salary:2000,
+         }
+         employe2={
+            fname:"srinadh",
+            lname:"tana",
+            salary:2000,
+         }
+          var result= employs.getmethod.apply(employe2,["Tirupati","India"])
+          document.write(result)
+       </script>
+    </body>
+</html>

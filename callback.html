@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h5>Callback() in javascript?</h5>
+        <p>A call back function is a function that is passing an argument to another function</p>
+        <script>
+            //normal function
+            function myfunction(a,b){
+                return document.write(a,b)
+            }
+            myfunction(23,45)
+        </script>
+        <script>
+            //Call back function
+            function callback(a){
+              return  a()
+            }
+            callback(function result(){
+                document.write("hello world")
+            })
+        </script>
+
+    </body>
+</html>

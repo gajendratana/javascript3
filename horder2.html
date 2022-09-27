@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>high order function : we can write the functions simplest form</p>
+        <script>
+            var arr=[10,20,30,40,50]
+            
+            function square(num){
+
+               return num*num
+
+            }
+              function cube(num){
+             return num*num*num
+
+            }
+            function increment(num){
+                return num+10
+            }
+            function anyoperation(arr,operation){
+                let res=[]
+                for(ele of arr){
+               var result=operation(ele)
+               res.push(result)
+                }  
+                return res          
+            }
+           var y= anyoperation(arr,cube)
+           var z=anyoperation(arr,increment)
+           var x =  anyoperation(arr,square)
+           document.write(x)
+           document.write("<br>"+y)
+           document.write("<br>"+z)
+        </script>
+    </body>
+</html>
